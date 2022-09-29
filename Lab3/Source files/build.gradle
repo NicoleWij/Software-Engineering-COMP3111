@@ -1,0 +1,17 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+	version = "17.0.2"
+	modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+mainClassName = 'comp3111.lab3.ex2.Library'
